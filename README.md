@@ -1,4 +1,4 @@
-# The Movie DataBase Lite
+# The Movie Database Lite
 #### Video Demo:  <https://www.youtube.com/watch?v=Qm9tWsraXjk>
 #### Description:
 このプロジェクトは、私たちが現在上映中の映画や自分の気になる映画を検索し、映画のポスターやあらすじ、ユーザーレビューを閲覧することができるウェブページです。
