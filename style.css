@@ -1,0 +1,130 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+header {
+  height: 90px;
+  display: flex;
+  background-color: var(--secondary-color);
+}
+
+#title {
+  left: 10px;
+  position: relative;
+  color: #33ccff;
+}
+
+#display {
+  position: absolute;
+  top: 90px;
+  left: 30px;
+  color: var(--secondery-color);
+}
+
+#keyword {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  color: var(--primary-color);
+}
+
+#keyword:focus {
+  outline: none;
+}
+
+#search {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--secondery-color);;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  color: var(--primary-color)
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#movie_card {
+  top: 50px;
+  width: 300px;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+#movie-card img {
+  width: 100%;
+}
+
+.movie-info {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+  word-break: normal
+}
+
+.movie-info h3 {
+  margin-top: 0;
+}
+
+.movie-info span {
+  background-color: #808080;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.movie-info span.green {
+  color: lightgreen;
+}
+ 
+.movie-info span.orange {
+  color: orange;
+}
+ 
+.movie-info span.red {
+  color: red;
+}
+
+.overview {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(100%);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in;
+}
+
+#movie_card:hover .overview {
+  transform: translateY(0);
+}
